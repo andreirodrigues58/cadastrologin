@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(166, 195, 2);
+}
+
+
+.secao-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Para base de posicionamento */
+    overflow: hidden;    /* Evita que o fundo vaze */
+}
+
+.UsuarsenhaLogin{
+    background-color: blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    gap: 9px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.text-h2{
+  color: white;
+  margin-bottom: 20px;
+}
+
+#labelNome, #labelUSER, #labelSENHA, #labelConfirmSENHA{
+    text-align: left;
+    padding: 3px 0;
+    font-size: 12px;
+    color: rgb(166, 195, 2);
+}
+
+#NomeCadas, #UserCadas, #SenhaCadas, #ConfirmSenhaCadas{
+    text-align: left;
+    width: 200px;
+    padding: 3px 0;
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px solid rgb(166, 195, 2); /* ou qualquer cor que quiser */
+    background: transparent;
+    outline: none;
+    color: #ffff;
+}
+
+#NomeCadas:focus, #UserCadas:focus, #SenhaCadas:focus, #ConfirmSenhaCadas:focus {
+    border-bottom: 2px solid white;
+}
+
+#NomeCadas::placeholder,
+#UserCadas::placeholder,
+#SenhaCadas::placeholder,
+#ConfirmSenhaCadas::placeholder{
+    color: rgb(166, 195, 2); 
+}
+
+
+.Cadastrar{
+    color: rgb(166, 195, 2);
+    text-decoration: none;
+    border: none;
+    padding: 4px;
+    width: 120px;
+    border-radius: 3px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.Cadastrar:hover{
+    color: #ffff;
+    background-color: rgb(166, 195, 2);
+    cursor: pointer;
+}
+
+.realizar-cadast{
+    margin-top: 8px;
+    color: white;
+}
+
+.realizar-cadast a{
+    color: rgb(166, 195, 2);
+}
+
+.senhacaixa3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.senhacaixa3 i{
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    color: #ffff;
+}
+
+.nomecaixa1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nomecaixa2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.senhacaixa2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.senhacaixa2 i{
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    color: #ffff;
+}
+
+#msgError{
+  background-color: rgb(166, 195, 2);
+  text-align: center;
+  color: red;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  font-size: 12px;
+}
+
+#msgSucess{
+  background-color: rgb(166, 195, 2);
+  text-align: center;
+  color: blue;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  font-size: 12px;
+}
